@@ -1,0 +1,27 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "custom renderer for react",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -d build",
+    "example": "./node_modules/.bin/babel-node App.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fbjs": "^0.8.17",
+    "officegen": "^0.4.5",
+    "react": "^16.4.1",
+    "react-reconciler": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "jest": "^21.2.1"
+  }
+}
