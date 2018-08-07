@@ -9,4 +9,4 @@ class App extends Component {
 }
 
 // This will create a file 'text.docx' in the current directory!
-render(<App />, `${__dirname}/text.docx`);
+render(<App />, `${__dirname}/text.pptx`);

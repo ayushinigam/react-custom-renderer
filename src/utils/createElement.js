@@ -1,4 +1,4 @@
-import { Text, WordDocument } from '../components/';
+import { Text, Deck } from '../components/';
 
 let ROOT_NODE_INSTANCE = null;
 
@@ -8,7 +8,7 @@ function getHostContextNode(rootNode) {
 	} else {
 		console.warn(`${rootNode} is not an instance of officegen docx constructor.`);
 
-		return (ROOT_NODE_INSTANCE = new WordDocument());
+		return (ROOT_NODE_INSTANCE = new Deck());
 	}
 }
 
@@ -16,7 +16,7 @@ function getHostContextNode(rootNode) {
 function createElement(type, props) {
 	console.log(type);
 	const COMPONENTS = {
-		ROOT: () => new WordDocument(),
+		ROOT: () => new Deck(),
 		TEXT: () => new Text(ROOT_NODE_INSTANCE, props),
 		default: undefined,
 	};

@@ -3,7 +3,7 @@ class Text {
 		this.root = root;
 		this.props = props;
 
-		this.adder = this.root.doc.createP();
+		this.adder = this.root.doc.makeNewSlide();
 	}
 
 	appendChild(child) {

@@ -1,4 +1,4 @@
-import WordDocument from './WordDocument';
+import Deck from './Deck';
 import Text from './Text';
 
-export { WordDocument, Text };
+export { Deck, Text };

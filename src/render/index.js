@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 import { createElement } from '../utils/createElement';
-import WordRenderer from '../reconciler/';
+import Renderer from '../reconciler/';
 
 // Renders the input component
 async function render(element, filePath) {
@@ -9,10 +9,10 @@ async function render(element, filePath) {
 	const container = createElement('ROOT');
 
 	// Returns the current fiber (flushed fiber)
-	const node = WordRenderer.createContainer(container);
+	const node = Renderer.createContainer(container);
 
 	// Schedules a top level update with current fiber and a priority level (depending upon the context)
-	WordRenderer.updateContainer(element, node, null);
+	Renderer.updateContainer(element, node, null);
 
 	// WordRenderer.injectIntoDevTools({
 	//   bundleType: 1,

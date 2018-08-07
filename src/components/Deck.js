@@ -1,10 +1,10 @@
 import officegen from 'officegen'
 
 // This creates the document instance
-class WordDocument {
+class Deck {
 	constructor() {
-		this.doc = officegen('docx')
+		this.doc = officegen('pptx')
 	}
 }
 
-export default WordDocument
+export default Deck

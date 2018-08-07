@@ -4,7 +4,7 @@ import { createElement,getHostContextNode } from '../utils/createElement';
 
 const Reconciler = require('react-reconciler');
 
-const WordRenderer = Reconciler({
+const Renderer = Reconciler({
 	appendInitialChild(parentInstance, child) {
 		if (parentInstance.appendChild) {
 			parentInstance.appendChild(child);
@@ -83,4 +83,4 @@ const WordRenderer = Reconciler({
 	supportsMutation: true,
 });
 
-export default WordRenderer;
+export default Renderer;
